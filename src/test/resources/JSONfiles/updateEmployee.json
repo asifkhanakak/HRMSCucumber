@@ -1,0 +1,8 @@
+  "emp_firstname": "Robert",
+  "emp_lastname": "updatedLastName",
+  "emp_middle_name": "updMiddleName",
+  "emp_gender": "1",
+  "emp_birthday": "2020-02-22",
+  "emp_status": "Worker",
+  "emp_job_title": "Production Manager"
+}

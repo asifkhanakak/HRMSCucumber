@@ -26,21 +26,22 @@ public class PersonalDetails extends CommonMethods {
 		//jsClick(empList.searchbtn);
 		//jsClick(empList.myEmployee);
 
-		boolean found = false;
-		while (!found) {
+		//boolean found = false;
+		//while (!found) {
 			List<WebElement> rows = driver.findElements(By.xpath("//table[@id='resultTable']/tbody/tr"));
 			for (int i = 1; i < rows.size(); i++) {
-				String rowsText = rows.get(i - 1).getText();
+				String rowsText = rows.get(i).getText();
 				System.out.println(rowsText);
-				if (rowsText.contains("4060")) {
+				if (rowsText.contains("5965")) {
 					driver.findElement(By.xpath("//table[@id='resultTable']/tbody/tr["+i+"]/td[2]")).click();
 					jsClick(empList.idClick);
+					//found=true;
 					break;
 				}
 			}
 			jsClick(empList.empTableNextBtn);
 		}
-	}
+	//}
 
 	@When("I click on edit button") 
 	public void i_click_on_edit_button() {

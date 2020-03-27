@@ -1,7 +1,7 @@
-@Login @sprint1
+ @sprint1
 Feature: Login
 
-  @smoke
+  @smoke, @login
   Scenario: valid Login
     When I enter valid username and password
     And I click on login button
